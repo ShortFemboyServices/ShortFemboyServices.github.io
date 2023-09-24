@@ -10,13 +10,13 @@ function openURLInNewTab(url) {
 
 // Add click event listeners to the buttons
 youtubeButton.addEventListener("click", function() {
-    openURLInNewTab("https://www.youtube.com/");
+    openURLInNewTab("https://www.youtube.com/channel/UCj7ixf-emgaMs0i3yCpaHmQ");
 });
 
 tiktokButton.addEventListener("click", function() {
-    openURLInNewTab("https://www.tiktok.com/");
+    openURLInNewTab("https://www.tiktok.com/@wxnt3rseason");
 });
 
 discordButton.addEventListener("click", function() {
-    openURLInNewTab("https://www.discord.com/");
+    openURLInNewTab("https://www.discordapp.com/users/1151675022734270577");
 });
