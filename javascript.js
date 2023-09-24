@@ -1,26 +1,22 @@
-// Function to handle button clicks
-function handleButtonClick(event) {
-    event.preventDefault(); // Prevent the default link behavior (navigation)
-    
-    // Get the social media platform from the button's class
-    const platform = event.target.classList[0];
-    
-    // You can replace the "#" with the actual URLs to your social media profiles
-    switch (platform) {
-        case 'facebook-button':
-            window.location.href = 'https://www.facebook.com/YourPage';
-            break;
-        case 'twitter-button':
-            window.location.href = 'https://twitter.com/YourTwitter';
-            break;
-        case 'instagram-button':
-            window.location.href = 'https://www.instagram.com/YourInstagram';
-            break;
-    }
+// Get references to the buttons
+const youtubeButton = document.getElementById("youtube-button");
+const tiktokButton = document.getElementById("tiktok-button");
+const discordButton = document.getElementById("discord-button");
+
+// Function to open URLs in new tabs when buttons are clicked
+function openURLInNewTab(url) {
+    window.open(url, "_blank");
 }
 
-// Add a click event listener to each social media button
-const buttons = document.querySelectorAll('.facebook-button, .twitter-button, .instagram-button');
-buttons.forEach(button => {
-    button.addEventListener('click', handleButtonClick);
+// Add click event listeners to the buttons
+youtubeButton.addEventListener("click", function() {
+    openURLInNewTab("https://www.youtube.com/");
+});
+
+tiktokButton.addEventListener("click", function() {
+    openURLInNewTab("https://www.tiktok.com/");
+});
+
+discordButton.addEventListener("click", function() {
+    openURLInNewTab("https://www.discord.com/");
 });
